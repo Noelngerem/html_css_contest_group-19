@@ -1,0 +1,107 @@
+* {
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+}
+header {
+    background: #ffff;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0px 30px;
+    border-bottom: 1px solid black;
+}
+header .logo {
+    font-size: 40px;
+    font-style: ;
+    color: brown;
+    font-weight: bold;
+}
+header nav ul {
+    display: flex;
+    column-gap: 30px;
+    list-style: none;
+}
+header a {
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+main {
+    position: relative;
+    z-index: -1;
+    top: 80px;
+    width: auto;
+}
+.welcome {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+.wlcm-content {
+    text-align: center;
+}
+.wlcm-content h1 {
+    font-size: 100px;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s;
+}
+.wlcm-content h1 span {
+    color: red;
+}
+.wlcm-content p {
+    font-size: 25px;
+    font-style: italic;
+    padding-top: 5%;
+    line-height: 35px;
+    color: white;
+}
+.welcome video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.about {
+    position: absolute;
+    top: 620px;
+    height: 300px;
+}
+.about .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    border-radius: 30px;
+    background-color: lightgrey;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .welcome video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .welcome video{
+        width: auto;
+        height: 100%;
+    }
+}
