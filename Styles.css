@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     position: relative;
 }
@@ -45,7 +48,7 @@ header a::after {
     position: absolute;
     height: 3px;
     width: 0;
-    background-color: red;
+    background-color:skyblue;
     bottom: -10px;
     left: 0;
 }
@@ -59,7 +62,7 @@ main {
     top: 80px;
     width: auto;
 }
-.welcome {
+#welcome {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -68,7 +71,7 @@ main {
     justify-content: center;
     background: rgba(0, 0, 0, 0.5);
 }
-.welcome video {
+#welcome video {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -93,7 +96,7 @@ main {
     line-height: 35px;
     color: white;
 }
-.wellness-pkg {
+#wellness-pkg {
     position: relative;
     display: flex;
     justify-content: center;
@@ -112,42 +115,42 @@ main {
     position: absolute;
     right: 200px;
 }
-.wellness-pkg h1 {
+#wellness-pkg h1 {
     text-align: center;
     font-size: 30px;
     color: brown;
 }
-.nutri-card:hover{
+#wellness-pkg .nutri-card:hover{
     color: white;
 }
-.fitness-card:hover{
+#wellness-pkg .fitness-card:hover{
     color: white;
 }
-.nutri-card:hover img{
+#wellness-pkg .nutri-card:hover img{
     height: 530px;
     transition: 0.3s ease-in-out;
 }
-.nutri-card:hover p {
+#wellness-pkg .nutri-card:hover p {
     background: rgba(0, 0, 0, 0.7);
     visibility: visible;
     transition: 0.3s ease-in-out;
 }
-.fitness-card:hover img{
+#wellness-pkg .fitness-card:hover img{
     height: 530px;
     transition: 0.3s ease-in-out;
 }
-.fitness-card:hover p {
+#wellness-pkg .fitness-card:hover p {
     background: rgba(0, 0, 0, 0.7);
     visibility: visible;
     transition: 0.3s ease-in-out;
 }
-.wellness-pkg img {
+#wellness-pkg img {
     border-radius: 20px;
     height: 500px;
     margin-top: 10%;
     box-shadow: -10px -10px 10px black;
 }
-.wellness-pkg p {
+#wellness-pkg p {
     position: absolute;
     top: 250px;
     text-align: center;
@@ -155,13 +158,13 @@ main {
     visibility: hidden;
 }
 @media (min-aspect-ratio: 16/9){
-    .welcome video{
+    #welcome video{
         width: 100%;
         height: auto;
     }
 }
 @media (max-aspect-ratio: 16/9){
-    .welcome video{
+    #welcome video{
         width: auto;
         height: 100%;
     }
