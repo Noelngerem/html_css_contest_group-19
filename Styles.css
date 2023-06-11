@@ -97,22 +97,23 @@ main {
     color: white;
 }
 #wellness-pkg {
-    position: relative;
+    position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     top: 602px;
     height: 600px;
+    width: 100%;
     padding-top: 1%;
     background-color: lightgrey;
 }
 .nutri-card {
-    position: absolute;
+    position: relative;
     left: 200px;
     box-sizing: border-box;
 }
 .fitness-card {
-    position: absolute;
+    position: relative;
     right: 200px;
 }
 #wellness-pkg h1 {
@@ -155,7 +156,52 @@ main {
     top: 250px;
     text-align: center;
     font-size: 23px;
+    font-style: italic;
     visibility: hidden;
+}
+#about {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 1204px;
+}
+#about .profile {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 0;
+}
+#about img {
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+#about h3 {
+    margin-bottom: 2%;
+}
+#about .profile p {
+    font-style: italic;
+}
+#about .info {
+    justify-content: space-between;
+    align-items: center;
+    /*margin-left: 20px;*/
+    margin-left: 50px;
+    padding: 20px;
+    right: 0;
+    /*background-color: blueviolet;*/
+}
+#about h1 {
+    font-size: 40px;
+    margin-bottom: 2%;
+    color: brown;
+}
+#about .info p {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 35px;
 }
 @media (min-aspect-ratio: 16/9){
     #welcome video{

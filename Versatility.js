@@ -5,6 +5,4 @@ function voiceTalk () {
     window.speechSynthesis.speak(speech);
 }
 
-const delay = 3000;
-
-setTimeout(voiceTalk, delay);
+window.onload = voiceTalk();
