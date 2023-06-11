@@ -25,15 +25,33 @@ header .logo {
     color: brown;
     font-weight: bold;
 }
-header nav ul {
-    display: flex;
-    column-gap: 30px;
+header li {
+    display: inline-block;
     list-style: none;
+    padding-right: 20px;
 }
 header a {
+    position: relative;
+    display: inline-block;
     text-decoration: none;
     color: brown;
     font-weight: bold;
+}
+header a:hover {
+    color: red;
+}
+header a::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: red;
+    bottom: -10px;
+    left: 0;
+}
+header a:hover::after {
+    width: 100%;
+    transition: 0.3s ease;
 }
 main {
     position: relative;
@@ -75,24 +93,67 @@ main {
     line-height: 35px;
     color: white;
 }
-.about {
-    position: absolute;
-    top: 620px;
-    height: 300px;
-}
-.about .about-content {
+.wellness-pkg {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-right: 25px;
-    margin-bottom: 20px;
-    margin-left: 25px;
-    border-radius: 30px;
+    top: 602px;
+    height: 600px;
+    padding-top: 1%;
     background-color: lightgrey;
 }
-
+.nutri-card {
+    position: absolute;
+    left: 200px;
+    box-sizing: border-box;
+}
+.fitness-card {
+    position: absolute;
+    right: 200px;
+}
+.wellness-pkg h1 {
+    text-align: center;
+    font-size: 30px;
+    color: brown;
+}
+.nutri-card:hover{
+    color: white;
+}
+.fitness-card:hover{
+    color: white;
+}
+.nutri-card:hover img{
+    height: 530px;
+    transition: 0.3s ease-in-out;
+}
+.nutri-card:hover p {
+    background: rgba(0, 0, 0, 0.7);
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+}
+.fitness-card:hover img{
+    height: 530px;
+    transition: 0.3s ease-in-out;
+}
+.fitness-card:hover p {
+    background: rgba(0, 0, 0, 0.7);
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+}
+.wellness-pkg img {
+    border-radius: 20px;
+    height: 500px;
+    margin-top: 10%;
+    box-shadow: -10px -10px 10px black;
+}
+.wellness-pkg p {
+    position: absolute;
+    top: 250px;
+    text-align: center;
+    font-size: 23px;
+    visibility: hidden;
+}
 @media (min-aspect-ratio: 16/9){
     .welcome video{
         width: 100%;
