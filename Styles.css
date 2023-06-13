@@ -47,13 +47,13 @@ header a::after {
     position: absolute;
     height: 3px;
     width: 0;
-    background-color:skyblue;
+    background-color: red;
     bottom: -10px;
     left: 0;
+    transition: 0.3s ease-in-out;
 }
 header a:hover::after {
     width: 100%;
-    transition: 0.3s ease;
 }
 main {
     position: relative;
@@ -104,16 +104,23 @@ main {
     height: 600px;
     width: 100%;
     padding-top: 1%;
-    background-color: lightgrey;
+    background: lightgrey;
 }
 .nutri-card {
     position: relative;
     left: 200px;
     box-sizing: border-box;
 }
+.nutri-card img {
+    transition: 0.3s ease-in-out;
+}
 .fitness-card {
     position: relative;
     right: 200px;
+    box-sizing: border-box;
+}
+.fitness-card img {
+    transition: 0.3s ease-in-out;
 }
 #wellness-pkg h1 {
     text-align: center;
@@ -126,16 +133,19 @@ main {
 #wellness-pkg .fitness-card:hover{
     color: white;
 }
-#wellness-pkg .nutri-card:hover img{
+#wellness-pkg .nutri-card:hover img {
     height: 530px;
     transition: 0.3s ease-in-out;
+}
+.nutri-card:hover img {
+    height: 530px;
 }
 #wellness-pkg .nutri-card:hover p {
     background: rgba(0, 0, 0, 0.7);
     visibility: visible;
     transition: 0.3s ease-in-out;
 }
-#wellness-pkg .fitness-card:hover img{
+#wellness-pkg .fitness-card:hover img {
     height: 530px;
     transition: 0.3s ease-in-out;
 }
@@ -164,7 +174,9 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 400px;
     top: 1204px;
+    background: white;
 }
 #about .profile {
     justify-content: center;
@@ -201,6 +213,131 @@ main {
     font-size: 20px;
     font-style: italic;
     line-height: 35px;
+}
+#avail {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 1605px;
+    background: wheat;
+    color: #ffff;
+}
+#avail form {
+    background: #f5f5f5;
+    padding: 20px;
+    margin: 150px 0 50px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 25px 5px black;
+}
+#avail form h1 {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size: 35px;
+    color: gray;
+}
+#avail form label {
+    font-size: 20px;
+    color: red;
+}
+#avail form input{
+    margin: 10px;
+    padding: 15px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    width: 250px;
+    height: 30px;
+    background: white;
+}
+#avail form #email {
+    width: 400px;
+    margin-top: 40px;
+}
+#avail form #package-choice {
+    margin-top: 40px;
+}
+#avail form textarea {
+    border-radius: 10px;
+    width: 450px;
+    height: 100px;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background: white;
+    margin-top: 40px;
+}
+#avail form button {
+    height: 30px;
+    width: 100px;
+    margin: 40px 0 20px 0;
+    padding: 2px;
+    border-radius: 10px;
+    background: skyblue;
+    transition: 0.2s ease-in-out;
+}
+#avail form button:hover {
+    cursor: pointer;
+    background: whitesmoke;
+    color: skyblue;
+    height: 35px;
+    width: 105px;
+}
+#avail img{
+    position: absolute;
+    height: 100px;
+    right: 0;
+    bottom: 6%;
+    transition: 0.3s ease-in-out;
+}
+#avail img:hover {
+    cursor: pointer;
+    height: 120px;
+}
+#footer {
+    color: #f5f5f5;
+    background: #020B4A;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 90px;
+    top: 2450px;
+}
+#footer .logo {
+    position: absolute;
+    left: 2%;
+}
+#footer .logo h1 {
+    color: brown;
+}
+#footer .copy {
+    position: absolute;
+    left: 44.5%;
+    right: 44.5%;
+    bottom: 3%;
+}
+#footer p {
+    font-size: 20px;
+    font-weight: bold;
+}
+#footer .contact-us {
+    position: absolute;
+    right: 2%;
+}
+#footer a {
+    padding-right: 20px;
+}
+#footer a img {
+    height: 40px;
+    transition: 0.3s ease-in-out;
+}
+#footer a img:hover {
+    height: 35px;
 }
 @media (min-aspect-ratio: 16/9){
     #welcome video{
