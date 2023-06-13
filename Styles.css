@@ -221,19 +221,28 @@ main {
     align-items: center;
     width: 100%;
     top: 1605px;
-    background: wheat;
+    background: rgba(0, 0, 0, 0.5);
     color: #ffff;
+}
+#avail #background {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
 }
 #avail form {
     background: #f5f5f5;
-    padding: 20px;
+    height: 555px;
+    padding: 20px 20px 20px 40px;
     margin: 150px 0 50px 0;
     border-radius: 15px;
     box-shadow: 0 0 25px 5px black;
 }
 #avail form h1 {
     text-align: center;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 40px 0;
     font-size: 35px;
     color: gray;
 }
@@ -270,29 +279,36 @@ main {
     margin-top: 40px;
 }
 #avail form button {
-    height: 30px;
+    position: absolute;
+    left: 44.5%;
+    right: 44.5%;
+    bottom: 5%;
+    height: 35px;
     width: 100px;
     margin: 40px 0 20px 0;
     padding: 2px;
     border-radius: 10px;
+    border: 2px solid skyblue;
+    font-weight: bold;
+    letter-spacing: 2px;
     background: skyblue;
     transition: 0.2s ease-in-out;
 }
 #avail form button:hover {
     cursor: pointer;
     background: whitesmoke;
-    color: skyblue;
-    height: 35px;
+    color: blue;
+    height: 40px;
     width: 105px;
 }
-#avail img{
+#avail #quality{
     position: absolute;
     height: 100px;
     right: 0;
     bottom: 6%;
     transition: 0.3s ease-in-out;
 }
-#avail img:hover {
+#avail #quality:hover {
     cursor: pointer;
     height: 120px;
 }
@@ -305,8 +321,8 @@ main {
     align-items: center;
     padding: 20px;
     width: 100%;
-    height: 90px;
-    top: 2450px;
+    height: 95px;
+    top: 2440px;
 }
 #footer .logo {
     position: absolute;

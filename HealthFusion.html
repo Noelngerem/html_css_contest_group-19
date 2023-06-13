@@ -29,7 +29,7 @@
             </video>
             <div class="wlcm-content">
                 <h1><span>Health</span>Fusion</h1>
-                <p id="wlcm-speech">Your ultimate destination for remote professionals seeking a healthy work-life balance</p>
+                <p id="wlcm-speech">Welcome to HealthFusion, an ultimate destination for remote professionals seeking a healthy work-life balance. Step into a world of wellness at HealthFusion - your trusted companion on the path to a healthier you.</p>
             </div>
         </section>
 
@@ -63,24 +63,26 @@
         </section>
 
         <section id="avail">
+            <img src="Images/Veggies pic.jpg" alt="" id="background">
             <form onsubmit ="emailUs(); reset(); return false;">
-                <h1>Avail</h1>
+                <h1>Avail Package Request</h1>
                 <label for="first-name">First name</label>
-                <input type="text" id="first-name">
+                <input type="text" id="first-name" required>
                 <label for="last-name">Last name</label>
-                <input type="text" id="last-name"><br>
+                <input type="text" id="last-name" required><br>
                 <label for="email">Email</label>
-                <input type="text" id="email"><br>
+                <input type="text" id="email" required><br>
                 <label for="Package choice">Package choice</label>
-                <input type="text" id="package-choice"><br>
+                <input type="text" id="package-choice" required><br>
 
-                <textarea id="reach-out" rows="9">Reach Out</textarea>
-                <label for="reach-out"></label><br>
+                <label for="reach-out"></label>
+                <textarea id="reach-out" rows="9" placeholder="Request" required></textarea>
+                
 
                 <button type="submit">SUBMIT</button>
             </form>
 
-            <img src="Images/100% Quality.svg" alt="Quality">
+            <img src="Images/100% Quality.svg" alt="Quality" id="quality">
         </section>
     </main>
 
